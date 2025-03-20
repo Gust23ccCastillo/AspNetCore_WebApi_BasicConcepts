@@ -68,6 +68,7 @@ Se implementan tecnologías y patrones como:
 - **URL:** `/api/v1/hoteles`
 - **Ejemplo en Postman:**
   ![Get Hoteles](https://postman.com/example-screenshot.jpg)
+- URL de la Documentacion en postman: https://documenter.getpostman.com/view/19070925/2sAYkGKeYP
 
 #### 🏨 Obtener un hotel por ID
 - **Método:** `GET`
