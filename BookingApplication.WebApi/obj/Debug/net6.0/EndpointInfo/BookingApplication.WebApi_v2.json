@@ -1,0 +1,382 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Web Api Reservtion Hotel",
+    "description": "Esta Api contiene la Funcionalidad para Crear Hoteles, Habitaciones de Hoteles y Reservaciones en un Hotel en Especifico.",
+    "contact": {
+      "name": "Author Name",
+      "email": "SoftwareLife506@gmail.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "version": "2.0"
+  },
+  "paths": {
+    "/api/v2/RoomsActions/GetAllTheRoomsOfSpecificHotel": {
+      "get": {
+        "tags": [
+          "RoomsActions"
+        ],
+        "parameters": [
+          {
+            "name": "valueHotelIdParameter",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModelDtoRoomInformation"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModelDtoRoomInformation"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModelDtoRoomInformation"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/RoomsActions/ObtainHotelRoomInformationById": {
+      "get": {
+        "tags": [
+          "RoomsActions"
+        ],
+        "parameters": [
+          {
+            "name": "hotelIdParameter",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "roomIdParameter",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelDtoSpecificInfoRoom"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelDtoSpecificInfoRoom"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelDtoSpecificInfoRoom"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/RoomsActions/CreateRooms": {
+      "post": {
+        "tags": [
+          "RoomsActions"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNewRoomForSpecificHotelInformation"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNewRoomForSpecificHotelInformation"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNewRoomForSpecificHotelInformation"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Unit"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Unit"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Unit"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/RoomsActions/UpdateRooms": {
+      "put": {
+        "tags": [
+          "RoomsActions"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatedRoomForSpecficHotelInformation"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatedRoomForSpecficHotelInformation"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatedRoomForSpecficHotelInformation"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelDtoReturnUpdateRooms"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelDtoReturnUpdateRooms"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelDtoReturnUpdateRooms"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/RoomsActions/RemoveRooms": {
+      "delete": {
+        "tags": [
+          "RoomsActions"
+        ],
+        "parameters": [
+          {
+            "name": "hotelIdParameter",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "roomIdParameter",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Unit"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Unit"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Unit"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateNewRoomForSpecificHotelInformation": {
+        "type": "object",
+        "properties": {
+          "hotelIdParameter": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "roomNumberParameter": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sizeRoomParameter": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "needsRepairParameter": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelDtoReturnUpdateRooms": {
+        "type": "object",
+        "properties": {
+          "idRoom": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "roomNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sizeRoom": {
+            "type": "number",
+            "format": "double"
+          },
+          "needRepair": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelDtoRoomInformation": {
+        "type": "object",
+        "properties": {
+          "idRoom": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "roomNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "size": {
+            "type": "number",
+            "format": "double"
+          },
+          "needsRepair": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelDtoSpecificInfoRoom": {
+        "type": "object",
+        "properties": {
+          "roomNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "size": {
+            "type": "number",
+            "format": "double"
+          },
+          "needsRepair": {
+            "type": "boolean"
+          },
+          "dateReservations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Unit": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "UpdatedRoomForSpecficHotelInformation": {
+        "type": "object",
+        "properties": {
+          "hotelIdParameter": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "roomIdParameter": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "roomNumberParameter": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sizeRoomParameter": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "needsRepairParameter": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

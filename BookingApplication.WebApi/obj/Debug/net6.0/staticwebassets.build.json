@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "nWVYyan0XHN83Gg+/8rakeD+j++TQ3eV4anAPG3rrEg=",
+  "Source": "BookingApplication.WebApi",
+  "BasePath": "_content/BookingApplication.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

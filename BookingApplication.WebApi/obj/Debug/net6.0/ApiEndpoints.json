@@ -1,0 +1,364 @@
+[
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V1.HotelActionsController",
+    "Method": "CreateNewHotelInApplication",
+    "RelativePath": "api/v1/HotelActions/CreateNewHotelInApplication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createHotelParameter",
+        "Type": "BookingApplication.Services.Commands.CommandHotel.CommandCreateHotel\u002BCreateNewHotelInformation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MediatR.Unit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V1.HotelActionsController",
+    "Method": "DeleteSpecificHotelInApplication",
+    "RelativePath": "api/v1/HotelActions/DeleteSpecificHotelInApplication",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idHotelParameter",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MediatR.Unit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V1.HotelActionsController",
+    "Method": "GetAllHotelsInApplication",
+    "RelativePath": "api/v1/HotelActions/GetAllHotelsInApplication",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BookingApplication.Services.Querys.HotelQuery.QueryHotelDtos.ModelDto_Hotel_List_Information, BookingApplication.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V1.HotelActionsController",
+    "Method": "GetHotelById",
+    "RelativePath": "api/v1/HotelActions/GetHotelById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idHotelParameter",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingApplication.Services.Querys.HotelQuery.QueryHotelDtos.ModelDto_Specific_Hotel_Information",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V1.HotelActionsController",
+    "Method": "UpdateSpecificHotelInApplication",
+    "RelativePath": "api/v1/HotelActions/UpdateSpecificHotelInApplication",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateInfoSpecificHotelById",
+        "Type": "BookingApplication.Services.Commands.CommandHotel.CommandUpdatedHotel\u002BUpdatedHotelSpecificInformartion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingApplication.Services.Querys.HotelQuery.QueryHotelDtos.ModelDto_Hotel_List_Information",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V2.RoomsActionsController",
+    "Method": "CreateRooms",
+    "RelativePath": "api/v2/RoomsActions/CreateRooms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createRoomsParameter",
+        "Type": "BookingApplication.Services.Commands.CommandRooms.CommandCreateRoomForSpecificHotel\u002BCreateNewRoomForSpecificHotelInformation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MediatR.Unit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V2.RoomsActionsController",
+    "Method": "GetAllTheRoomsOfSpecificHotel",
+    "RelativePath": "api/v2/RoomsActions/GetAllTheRoomsOfSpecificHotel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "valueHotelIdParameter",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BookingApplication.Services.Querys.RoomHotelQuery.QueryRoomHotelDto.ModelDtoRoomInformation, BookingApplication.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V2.RoomsActionsController",
+    "Method": "ObtainHotelRoomInformationById",
+    "RelativePath": "api/v2/RoomsActions/ObtainHotelRoomInformationById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hotelIdParameter",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "roomIdParameter",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingApplication.Services.Querys.RoomHotelQuery.QueryRoomHotelDto.ModelDtoSpecificInfoRoom",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V2.RoomsActionsController",
+    "Method": "RemoveRooms",
+    "RelativePath": "api/v2/RoomsActions/RemoveRooms",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hotelIdParameter",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "roomIdParameter",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MediatR.Unit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V2.RoomsActionsController",
+    "Method": "UpdateRooms",
+    "RelativePath": "api/v2/RoomsActions/UpdateRooms",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateRoomParameter",
+        "Type": "BookingApplication.Services.Commands.CommandRooms.CommandUpdatedRoomForSpecificHotel\u002BUpdatedRoomForSpecficHotelInformation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingApplication.Services.Commands.CommandRooms.CommandModelDto.ModelDtoReturnUpdateRooms",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V3.ReservationsToMakeController",
+    "Method": "CreateOfReservationForHotel",
+    "RelativePath": "api/v3/ReservationsToMake/CreateOfReservationForHotel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createReservationTheHotel",
+        "Type": "BookingApplication.Services.Commands.CommandReservations.CommandCreateNewReservationForHotel\u002BCreateNewReservationInformation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V3.ReservationsToMakeController",
+    "Method": "DeleteSpecificReservationForHotel",
+    "RelativePath": "api/v3/ReservationsToMake/DeleteSpecificReservationForHotel",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reservationIdParameter",
+        "Type": "BookingApplication.Services.Commands.CommandReservations.CommandDeleteSpecificReservationForHotel\u002BDeleteSpecificReservationInformation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V3.ReservationsToMakeController",
+    "Method": "GetAllListReservationInformation",
+    "RelativePath": "api/v3/ReservationsToMake/GetAllListReservationInformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BookingApplication.Services.Querys.ReservationQuery.QueryReservationDtos.ModelDto_Reservation_Information, BookingApplication.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingApplication.WebApi.Controllers.V3.ReservationsToMakeController",
+    "Method": "GetSpecificReservationById",
+    "RelativePath": "api/v3/ReservationsToMake/GetSpecificReservationById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reservationId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingApplication.Services.Querys.ReservationQuery.QueryReservationDtos.ModelDto_Reservation_Information",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

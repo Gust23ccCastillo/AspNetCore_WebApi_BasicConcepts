@@ -1,0 +1,300 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Web Api Reservtion Hotel",
+    "description": "Esta Api contiene la Funcionalidad para Crear Hoteles, Habitaciones de Hoteles y Reservaciones en un Hotel en Especifico.",
+    "contact": {
+      "name": "Author Name",
+      "email": "SoftwareLife506@gmail.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "version": "3.0"
+  },
+  "paths": {
+    "/api/v3/ReservationsToMake/GetAllListReservationInformation": {
+      "get": {
+        "tags": [
+          "ReservationsToMake"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModelDto_Reservation_Information"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModelDto_Reservation_Information"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModelDto_Reservation_Information"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v3/ReservationsToMake/GetSpecificReservationById": {
+      "get": {
+        "tags": [
+          "ReservationsToMake"
+        ],
+        "parameters": [
+          {
+            "name": "reservationId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelDto_Reservation_Information"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelDto_Reservation_Information"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelDto_Reservation_Information"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v3/ReservationsToMake/CreateOfReservationForHotel": {
+      "post": {
+        "tags": [
+          "ReservationsToMake"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNewReservationInformation"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNewReservationInformation"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNewReservationInformation"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v3/ReservationsToMake/DeleteSpecificReservationForHotel": {
+      "delete": {
+        "tags": [
+          "ReservationsToMake"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSpecificReservationInformation"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSpecificReservationInformation"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSpecificReservationInformation"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateNewReservationInformation": {
+        "type": "object",
+        "properties": {
+          "hotelIdParameter": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "roomIdParameter": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "checkInDateParameter": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "checkOutDateParameter": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "nameForClient": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeleteSpecificReservationInformation": {
+        "type": "object",
+        "properties": {
+          "reservationId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelDto_Hotel_Information": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelDto_InfoDaysReservated": {
+        "type": "object",
+        "properties": {
+          "dayReservate": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelDto_Reservation_Information": {
+        "type": "object",
+        "properties": {
+          "reservationId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "hotel_Information": {
+            "$ref": "#/components/schemas/ModelDto_Hotel_Information"
+          },
+          "room_Information": {
+            "$ref": "#/components/schemas/ModelDto_Room_Information"
+          },
+          "daysOfReservation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModelDto_InfoDaysReservated"
+            },
+            "nullable": true
+          },
+          "nameClient": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelDto_Room_Information": {
+        "type": "object",
+        "properties": {
+          "roomNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "size": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
