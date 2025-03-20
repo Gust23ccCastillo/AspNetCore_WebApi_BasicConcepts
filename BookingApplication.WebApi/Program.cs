@@ -10,8 +10,6 @@ using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
-//builder.Services.AddValidatorsFromAssemblyContaining<Program>();
-//builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 builder.Services.AddControllers()
     .AddFluentValidation(agregatedFluentValidationConfig => agregatedFluentValidationConfig.RegisterValidatorsFromAssemblyContaining(typeof(CommandCreateHotel.CreateNewHotelInformation)));
 
@@ -54,13 +52,6 @@ apiVersioningBuilder.AddApiExplorer(
         options.SubstituteApiVersionInUrl = true;
     });
 var app = builder.Build();
-
-////ESTO ES PARA QUE CREE LAS MIGRACIONES AUTIMATICAS AL LEVANTAR MI SERVIDOR CON DOCKER
-//using (var scope = app.Services.CreateScope())
-//{
-//    var dbContext = scope.ServiceProvider.GetRequiredService<DbContextProyect>();
-//    dbContext.Database.Migrate();
-//}
 
 if (app.Environment.IsDevelopment())
 {

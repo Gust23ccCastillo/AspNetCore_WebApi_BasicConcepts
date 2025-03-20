@@ -24,7 +24,7 @@ namespace BookingApplication.WebApi.SwaggerConfiguration
         {
             var info = new OpenApiInfo()
             {
-                Title = "Web Api Reservtion Hotel",
+                Title = "Web Api para Crear,Eliminar,Actualizar y Listar hoteles, habitaciones y mucho mas!",
                 Version = description.ApiVersion.ToString(),
                 Description = "Esta Api contiene la Funcionalidad para Crear Hoteles, Habitaciones de Hoteles y Reservaciones en un Hotel en Especifico.",
                 Contact = new OpenApiContact { Name = "Author Name", Email = "SoftwareLife506@gmail.com" },

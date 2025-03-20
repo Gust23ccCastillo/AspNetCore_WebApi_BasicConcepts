@@ -39,7 +39,7 @@ namespace BookingApplication.WebApi.MiddlewareApplication
                 errors = customException._ErrorsRequest;
                 statusCode = (int)customException._HttpStatusCode;
                 break;
-
+            //CAPTURA DE EXCEPCIONES DE FLUENT VALIDATION
             case FluentValidation.ValidationException validationException:
                 _logger.LogError(exception, "Errores de validación detectados");
                 errors = validationException.Errors.Select(err => new
