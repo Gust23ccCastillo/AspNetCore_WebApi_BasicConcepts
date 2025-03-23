@@ -27,7 +27,7 @@ Al trabajar con esta API, aprenderás:
 
 | Tecnología           | Descripción | Versión |
 |----------------------|------------|---------|
-| <img src="/AspNetCore_Basic_Concepts_For_Apis/BookingApplication.WebApi/Img/dotnetcore-original.svg" width="60"> | Framework principal de desarrollo | 🟦 6.0 |
+| <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/tree/main/BookingApplication.WebApi/Img/dotnetcore-original.svg" width="60"> | Framework principal de desarrollo | 🟦 6.0 |
 | <img src="Img/EfCore.png" width="60"> | ORM para el manejo de la base de datos | 🟨 6.0 |
 | <img src="Img/MediatR.png" width="60"> | Implementación del patrón Mediator | 🟥 Última |
 | <img src="Img/fluent-validation-logo.png" width="60"> | Validación de datos de entrada | 🟦 11.0 |
