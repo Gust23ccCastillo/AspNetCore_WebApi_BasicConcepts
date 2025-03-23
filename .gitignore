@@ -1,1 +1,7 @@
-.vs/ 
+.gitignore
+.vscode
+.dockerignore
+GettingStarting.md
+docker-compose.yml
+BookingApplicationTesting
+
