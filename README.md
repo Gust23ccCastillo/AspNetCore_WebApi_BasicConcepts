@@ -28,25 +28,25 @@ Al trabajar con esta API, aprenderás:
 | Tecnología           | Descripción | Versión |
 |----------------------|------------|---------|
 | <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/dotnetcore-original.svg" width="60"> | Framework principal de desarrollo | 🟦 6.0 |
-| <img src="Img/EfCore.png" width="60"> | ORM para el manejo de la base de datos | 🟨 6.0 |
-| <img src="Img/MediatR.png" width="60"> | Implementación del patrón Mediator | 🟥 Última |
-| <img src="Img/fluent-validation-logo.png" width="60"> | Validación de datos de entrada | 🟦 11.0 |
-| <img src="Img/Automapper.png" width="60"> | Mapeo automático entre modelos | 🟨 12.0 |
-| <img src="Img/docker-original-wordmark.svg" width="60"> | Contenedor para publicar y probar la API | 🟥 Última |
+| <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/EfCore.png" width="60"> | ORM para el manejo de la base de datos | 🟨 6.0 |
+| <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/MediatR.png" width="60"> | Implementación del patrón Mediator | 🟥 Última |
+| <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/fluent-validation-logo.png" width="60"> | Validación de datos de entrada | 🟦 11.0 |
+| <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/Automapper.png" width="60"> | Mapeo automático entre modelos | 🟨 12.0 |
+| <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/docker-original-wordmark.svg" width="60"> | Contenedor para publicar y probar la API | 🟥 Última |
 
 ## 💻 Imagenes de Tecnologías Utilizadas
 
 <p align="center" style="background-color: white; padding: 20px;">
-    <img src="Img/dotnetcore-original.svg" width="80" style="margin: 10px;">
-    <img src="Img/EfCore.png" width="80" style="margin: 10px;">
-    <img src="Img/csharp-original.svg" width="80" style="margin: 10px;">
+    <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/dotnetcore-original.svg" width="80" style="margin: 10px;">
+    <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/EfCore.png" width="80" style="margin: 10px;">
+    <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/csharp-original.svg" width="80" style="margin: 10px;">
     <img src="Img/MediatR.png" width="100" style="margin: 10px;">
-    <img src="Img/fluent-validation-logo.png" width="80" style="margin: 10px;">
-    <img src="Img/Automapper.png" width="80" style="margin: 10px;">
-    <img src="Img/docker-original-wordmark.svg" width="80" style="margin: 10px;">
-    <img src="Img/github-original-wordmark.svg" width="80" style="margin: 10px;">
-    <img src="Img/postman-original-wordmark.svg" width="80" style="margin: 10px;">
-    <img src="Img/swagger-original-wordmark.svg" width="80" style="margin: 10px;">
+    <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/fluent-validation-logo.png" width="80" style="margin: 10px;">
+    <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/Automapper.png" width="80" style="margin: 10px;">
+    <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/docker-original-wordmark.svg" width="80" style="margin: 10px;">
+    <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/github-original-wordmark.svg" width="80" style="margin: 10px;">
+    <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/postman-original-wordmark.svg" width="80" style="margin: 10px;">
+    <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/swagger-original-wordmark.svg" width="80" style="margin: 10px;">
 </p>
 
 
@@ -66,7 +66,7 @@ Al trabajar con esta API, aprenderás:
 
 La documentación completa de la API de Gestión de Hoteles, Habitaciones y Reservaciones puede consultarse en el siguiente enlace:
 <div style="display: flex; align-items: center;">
-  <img src="Img/postman-original-wordmark.svg" width="80" style="margin-right: 5px;">
+  <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/postman-original-wordmark.svg" width="80" style="margin-right: 5px;">
   <span style="font-size: 20px; margin-right: 5px;">➡️</span>
   <a href="https://documenter.getpostman.com/view/19070925/2sAYkGKeYP" style="font-size: 18px; text-decoration: none;">
     🔗 Ver Documentación en Postman
