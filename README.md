@@ -34,13 +34,13 @@ Al trabajar con esta API, aprenderás:
 | <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/Automapper.png" width="60"> | Mapeo automático entre modelos | 🟨 12.0 |
 | <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/docker-original-wordmark.svg" width="60"> | Contenedor para publicar y probar la API | 🟥 Última |
 
-## 💻 Imagenes de Tecnologías Utilizadas
+## 💻 Imágenes de Tecnologías Utilizadas  
 
 <p align="center" style="background-color: white; padding: 20px;">
     <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/dotnetcore-original.svg" width="80" style="margin: 10px;">
     <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/EfCore.png" width="80" style="margin: 10px;">
     <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/csharp-original.svg" width="80" style="margin: 10px;">
-    <img src="Img/MediatR.png" width="100" style="margin: 10px;">
+    <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/MediatR.png" width="100" style="margin: 10px;">
     <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/fluent-validation-logo.png" width="80" style="margin: 10px;">
     <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/Automapper.png" width="80" style="margin: 10px;">
     <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/docker-original-wordmark.svg" width="80" style="margin: 10px;">
@@ -48,7 +48,6 @@ Al trabajar con esta API, aprenderás:
     <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/postman-original-wordmark.svg" width="80" style="margin: 10px;">
     <img src="https://github.com/Gust23ccCastillo/AspNetCore_WebApi_BasicConcepts/blob/main/BookingApplication.WebApi/Img/swagger-original-wordmark.svg" width="80" style="margin: 10px;">
 </p>
-
 
 
 ## 🏗️ Arquitectura del Proyecto
